@@ -23,7 +23,7 @@ const StatistiqueRoot = () => {
           setError(response.err ? response.err : "Une erreur est survenue");
         }
       })
-      .catch((err) => {
+      .catch(() => {
         setError("Une erreur est survenue");
       });
   }, []);
