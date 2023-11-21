@@ -24,9 +24,7 @@ const StatistiqueRoot = () => {
         }
       })
       .catch((err) => {
-        const error = err.response.data;
-        // eto tokony mijery status
-        setError(error.err ? err.err : "Une erreur est survenue");
+        setError("Une erreur est survenue");
       });
   }, []);
 
