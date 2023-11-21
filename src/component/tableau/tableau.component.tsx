@@ -17,10 +17,12 @@ const Tableau = (props: any) => {
   return (
     <div className="tab">
       <TableContainer>
-        <Table sx={{ minWidth: 650 }} aria-label="simple table">
+        <Table aria-label="simple table">
           <TableHead className="table-head">
             <TableRow className="table-row">
-              <TableCell className="sticky_cell">Joueur</TableCell>
+              <TableCell className="sticky_cell" style={{ position: "sticky" }}>
+                Joueur
+              </TableCell>
               <TableCell>Equipe</TableCell>
               <TableCell>MJ</TableCell>
               <TableCell>PPM</TableCell>
@@ -34,9 +36,20 @@ const Tableau = (props: any) => {
           <TableBody>
             {stats.map((stat, index) => (
               <TableRow key={`stat_${index}`}>
-                <TableCell className="sticky_cell joueur_cell">
+                <TableCell
+                  className="sticky_cell joueur_cell"
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    position: "sticky",
+                  }}
+                >
                   {" "}
-                  <img src={stat.joueur.photoUrl} alt="Photo" />{" "}
+                  <img
+                    src={stat.joueur.photoUrl}
+                    alt="Photo"
+                    style={{ borderRadius: "50%", width: "30%" }}
+                  />{" "}
                   <span>{stat.joueur.nom}</span>
                 </TableCell>
                 <TableCell>{stat.joueur.equipe.nom}</TableCell>
