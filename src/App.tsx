@@ -1,12 +1,8 @@
-import './App.css'
-import Tableau from './component/tableau/tableau.component'
-const App = () => {
-  return (
-      <div>
-          <h1>Tableau Statistiques des joueurs</h1>
-          <Tableau  />
-      </div>
-  );
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import "./App.css";
+
+const App = ({ children }: any) => {
+  return <>{children}</>;
 };
 
 export default App;

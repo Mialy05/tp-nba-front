@@ -1,12 +1,12 @@
 export type Joueur = {
-    id:number;
+    id: number;
     nom: string;
     prenom: string;
     numero: number;
     masse: number;
     taille: number;
     equipe: Equipe;
-    photo_url:string
+    photoUrl: string
 };
 
 export type Equipe = {
@@ -16,7 +16,7 @@ export type Equipe = {
 
 export type Statistique = {
     joueur: Joueur;
-    nb_match: number;
+    nbMatch: number;
     pd: number;
     minutes: number;
     points: number;
@@ -24,4 +24,4 @@ export type Statistique = {
     points3: number;
     lancerFranc: number;
 };
-  
+
