@@ -23,7 +23,7 @@ const Tableau = (props: any) => {
               <TableCell className="sticky_cell" style={{ position: "sticky" }}>
                 Joueur
               </TableCell>
-              <TableCell>Equipe</TableCell>
+              {/* <TableCell>Equipe</TableCell> */}
               <TableCell>MJ</TableCell>
               <TableCell>PPM</TableCell>
               <TableCell>MPM</TableCell>
@@ -52,7 +52,7 @@ const Tableau = (props: any) => {
                   />{" "}
                   <span>{stat.joueur.nom}</span>
                 </TableCell>
-                <TableCell>{stat.joueur.equipe.nom}</TableCell>
+                {/* <TableCell>{stat.joueur.equipe.nom}</TableCell> */}
                 <TableCell align="right">{stat.nbMatch}</TableCell>
                 <TableCell align="right">{stat.points}</TableCell>
                 <TableCell align="right">{stat.minutes}</TableCell>

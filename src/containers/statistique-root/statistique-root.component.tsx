@@ -31,10 +31,7 @@ const StatistiqueRoot = () => {
   return (
     <div>
       <h1>Tableau Statistiques des joueurs</h1>
-      <p>
-        Les sites non autorisés doivent être accepté par le navigateur pour que
-        ça marche.
-      </p>
+
       {stats == null ? <CircularProgress /> : <Tableau stats={stats} />}
 
       <Snackbar
